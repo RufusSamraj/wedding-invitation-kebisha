@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f3eb" />
+    <meta
+      name="description"
+      content="A joyful invitation to celebrate the wedding of Kebisha Bright and Charles Salamon."
+    />
+    <title>Kebisha Bright& Charles Salamon — Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="intro" id="intro" aria-label="Open your wedding invitation">
+      <div class="envelope-wrap">
+        <p class="intro-kicker">A little note, sealed with love</p>
+        <div class="envelope" aria-hidden="true">
+          <div class="letter">
+            <span>C <i>&</i> K</span><small>joyfully invite you</small>
+          </div>
+          <div class="flap"></div>
+          <div class="envelope-front"></div>
+          <div class="seal">C<span>✳</span>K</div>
+        </div>
+        <button class="open-invite" id="openInvite">
+          Open invitation <span>→</span>
+        </button>
+        <p class="intro-hint">Tap to begin</p>
+      </div>
+    </div>
+
+    <div class="site-shell" id="siteShell" aria-hidden="true">
+      <header class="topbar">
+        <a
+          href="#home"
+          class="monogram"
+          aria-label="Kebisha Bright and Charles Salamon, home"
+          >C<span>&</span>K</a
+        >
+        <!-- <nav aria-label="Main navigation">
+          <a href="#story">Our story</a><a href="#details">The day</a
+          ><a href="#rsvp">RSVP</a>
+        </nav> -->
+        <button
+          class="music-toggle"
+          id="musicToggle"
+          aria-label="Play background music"
+          aria-pressed="false"
+        >
+          <span class="music-icon">♫</span
+          ><span class="music-label">Play music</span>
+        </button>
+      </header>
+      <div class="youtube-player" id="youtubePlayer" hidden></div>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy">
+            <div class="hero-crest" aria-label="C and K">
+              <span class="crest-ornament" aria-hidden="true">❧</span>
+              <span class="crest-initials">C <i>·</i> K</span>
+              <span class="crest-heart" aria-hidden="true">♥</span>
+            </div>
+            <p class="eyebrow">
+              <span>✳</span> Together with our families <span>✳</span>
+            </p>
+            <h1><span class="name-line">Kebisha Bright</span> <span class="couple-and">&amp;</span><br /><span class="name-line">Charles Salamon</span></h1>
+            <p class="hero-announcement">We are getting married</p>
+            <div class="hero-rule"><span>♥</span></div>
+            <p class="hero-subtitle">
+              invite you to celebrate<br />the beginning of forever
+            </p>
+            <div class="scratch-card" id="scratchCard" role="button" tabindex="0" aria-label="Scratch to reveal the wedding date">
+              <div class="scratch-reveal"><span>Friday · 20 November 2026</span><small>3:00 PM · Chennai</small></div>
+              <canvas id="scratchCanvas" aria-hidden="true"></canvas>
+              <div class="scratch-prompt" aria-hidden="true"><span>✦ &nbsp; Scratch to reveal &nbsp; ✦</span><small>our special day</small></div>
+              <div class="scratch-confetti" aria-hidden="true"></div>
+            </div>
+            <p class="hero-date">Chennai <span>·</span> India</p>
+            <a class="button button-gold" href="#details"
+              >Join our celebration <span>↓</span></a
+            >
+          </div>
+          <div
+            class="hero-photo"
+            role="img"
+            aria-label="A romantic garden filled with white flowers"
+          ></div>
+          <div class="hero-caption">
+            Rooted in love <span>✳</span> Growing in Grace
+          </div>
+        </section>
+
+        <section class="blessing section-pad" id="story">
+          <p class="eyebrow">A blessing for our beginning</p>
+          <div class="cross-mark" aria-hidden="true">✳</div>
+          <blockquote>
+            “And now these three remain:<br />faith, hope and love.<br /><em
+              >But the greatest of these is love.</em
+            >”
+          </blockquote>
+          <p class="verse">1 Corinthians 13:13</p>
+          <p class="blessing-copy">
+            With grateful hearts and the blessing of God, we invite you to share
+            in a day we’ll cherish for a lifetime.
+          </p>
+        </section>
+
+        <!-- <section class="story-photo" aria-label="Our favourite kind of forever">
+          <div class="story-overlay">
+            <span>Our favourite kind of forever</span
+            ><span class="gold-line"></span
+            ><small>Kebisha Bright& Charles Salamon</small>
+          </div>
+        </section>
+
+        <section class="gallery section-pad" aria-labelledby="gallery-title">
+          <p class="eyebrow">Little moments, big love</p>
+          <h2 id="gallery-title">Our story in <em>frames</em></h2>
+          <div class="gallery-grid">
+            <figure class="gallery-item gallery-tall">
+              <img
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85"
+                alt="Bride and groom celebrating beneath a canopy"
+              />
+              <figcaption>the day we said yes</figcaption>
+            </figure>
+            <figure class="gallery-item gallery-small">
+              <img
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=800&q=85"
+                alt="A couple sharing a quiet moment together"
+              />
+              <figcaption>always finding our way</figcaption>
+            </figure>
+            <figure class="gallery-item gallery-small">
+              <img
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=85"
+                alt="A joyful wedding celebration with loved ones"
+              />
+              <figcaption>surrounded by our people</figcaption>
+            </figure>
+          </div>
+        </section> -->
+
+        <section class="countdown-section" id="countdown-section">
+          <div class="countdown-inner">
+            <div class="save-date-card"><span>Save the date</span><strong>20 November 2026</strong><small>Chennai, India</small></div>
+            <p class="eyebrow">The countdown begins</p>
+            <h2>Counting down to <em><span class="no-wrap">“I do”</span></em></h2>
+            <div class="countdown" id="countdown" aria-live="polite"></div>
+            <p class="countdown-note">We can’t wait to celebrate with you</p>
+          </div>
+        </section>
+
+        <section class="details section-pad" id="details">
+          <p class="eyebrow">Save the date</p>
+          <h2>A day of <em>joy</em></h2>
+          <div class="details-card venue-schedule">
+            <div class="detail-block">
+              <span class="detail-icon">✧</span>
+              <h3>United in one place</h3>
+              <p>Friday, 20 November 2026</p>
+              <div class="schedule-times">
+                <p><span>Ceremony</span><strong>3:00 PM</strong></p>
+                <p><span>Reception</span><strong>6:30 PM</strong></p>
+              </div>
+              <p class="venue">St. Matthew’s Church</p>
+              <p>IAF Road, East Tambaram, Chennai</p>
+            </div>
+          </div>
+          <div class="map-card">
+            <iframe title="Map to St. Matthew’s Church, East Tambaram" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=St.%20Matthew%27s%20Church%2C%20IAF%20Road%2C%20East%20Tambaram%2C%20Chennai&output=embed"></iframe>
+            <a class="map-directions" target="_blank" rel="noopener" href="https://maps.app.goo.gl/BdqqTeaTopgXuTN87">⌖ &nbsp; Get directions</a>
+          </div>
+          <p class="dress-note">
+            <span>Attire</span> Festive formal · Come ready to celebrate
+          </p>
+        </section>
+
+        <!-- <section class="rsvp-section" id="rsvp">
+        <div class="rsvp-card">
+          <p class="eyebrow">Your presence is our present</p>
+          <h2>Will you <em>join us?</em></h2>
+          <p class="rsvp-copy">Kindly reply by 20January 2026. We’d love to save you a seat.</p>
+          <form name="wedding-rsvp" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+            action="/success.html">
+            <input type="hidden" name="form-name" value="wedding-rsvp" />
+            <p class="honeypot"><label>Leave this empty: <input name="bot-field" /></label></p>
+            <label class="field-label" for="guestName">Your name</label><input id="guestName" name="name" type="text"
+              placeholder="First and last name" autocomplete="name" required />
+            <label class="field-label" for="guestEmail">Email address</label><input id="guestEmail" name="email"
+              type="email" placeholder="you@example.com" autocomplete="email" required />
+            <fieldset>
+              <legend>Will you be celebrating with us?</legend><label class="choice"><input type="radio"
+                  name="attendance" value="Joyfully accepts" required /><span>Joyfully accepts</span></label><label
+                class="choice"><input type="radio" name="attendance" value="Regretfully declines" /><span>Regretfully
+                  declines</span></label>
+            </fieldset>
+            <label class="field-label" for="guestCount">Number attending</label><select id="guestCount" name="guests">
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+            </select>
+            <label class="field-label" for="message">A note for the couple <span>(optional)</span></label><textarea
+              id="message" name="message" rows="3"
+              placeholder="Dietary needs, song requests, or just a little hello…"></textarea>
+            <button class="button button-gold submit-button" type="submit">Send our RSVP <span>→</span></button>
+          </form>
+        </div>
+      </section> -->
+
+        <section class="closing section-pad">
+          <div class="closing-flower">❀</div>
+          <p class="eyebrow">Until we gather at the feast...</p>
+          <h2>With love, <em>always</em></h2>
+          <p>Kebisha Bright & Charles Salamon</p>
+        </section>
+      </main>
+      <!-- <nav class="mobile-dock" aria-label="Quick navigation">
+        <a href="#home" aria-label="Home"><span>⌂</span><small>Home</small></a>
+        <a href="#story" aria-label="Our story"><span>♡</span><small>Story</small></a>
+        <a href="#gallery-title" aria-label="Gallery"><span>▧</span><small>Photos</small></a>
+        <a href="#countdown-section" aria-label="Countdown"><span>✧</span><small>Countdown</small></a>
+      </nav> -->
+      <footer>
+        <span>MADE WITH LOVE · 2026</span><a href="#home">Back to top ↑</a
+        ><span>C <i>&</i> K</span>
+      </footer>
+    </div>
+    <div class="petal-rain" id="petalRain" aria-hidden="true"></div>
+    <audio id="weddingMusic" loop preload="none"></audio>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
