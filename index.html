@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ta">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f3eb" />
+    <meta
+      name="description"
+      content="கெபிஷா பிரைட் மற்றும் சார்லஸ் சலமோனின் திருமண விழாவைக் கொண்டாட அன்புடன் அழைக்கிறோம்."
+    />
+    <title>கெபிஷா பிரைட் &amp; சார்லஸ் சலமோன் — திருமண அழைப்பிதழ்</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="intro" id="intro" aria-label="உங்கள் திருமண அழைப்பிதழைத் திறக்கவும்">
+      <div class="envelope-wrap">
+        <p class="intro-kicker">அன்புடன் முத்திரையிடப்பட்ட சிறு அழைப்பிதழ்</p>
+        <div class="envelope" aria-hidden="true">
+          <div class="letter">
+            <span>C <i>&amp;</i> K</span><small>மகிழ்ச்சியுடன் உங்களை அழைக்கிறோம்</small>
+          </div>
+          <div class="flap"></div>
+          <div class="envelope-front"></div>
+          <div class="seal">C<span>✳</span>K</div>
+        </div>
+        <button class="open-invite" id="openInvite">
+          அழைப்பிதழைத் திறக்கவும் <span>→</span>
+        </button>
+        <p class="intro-hint">தொடங்கத் தட்டவும்</p>
+      </div>
+    </div>
+
+    <div class="site-shell" id="siteShell" aria-hidden="true">
+      <header class="topbar">
+        <a
+          href="#home"
+          class="monogram"
+          aria-label="கெபிஷா பிரைட் மற்றும் சார்லஸ் சலமோன், முகப்பு"
+          >C<span>&</span>K</a
+        >
+        <!-- <nav aria-label="Main navigation">
+          <a href="#story">Our story</a><a href="#details">The day</a
+          ><a href="#rsvp">RSVP</a>
+        </nav> -->
+        <button
+          class="music-toggle"
+          id="musicToggle"
+          aria-label="இசையை இயக்கவும்"
+          aria-pressed="false"
+        >
+          <span class="music-icon">♫</span
+          ><span class="music-label">இசையை இயக்கவும்</span>
+        </button>
+      </header>
+      <div class="youtube-player" id="youtubePlayer" hidden></div>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy">
+            <div class="hero-crest" aria-label="C and K">
+              <span class="crest-ornament" aria-hidden="true">❧</span>
+              <span class="crest-initials">C <i>·</i> K</span>
+              <span class="crest-heart" aria-hidden="true">♥</span>
+            </div>
+            <p class="eyebrow">
+              <span>✳</span> எங்கள் குடும்பத்தினருடன் இணைந்து <span>✳</span>
+            </p>
+            <h1><span class="name-line">கெபிஷா பிரைட்</span> <span class="couple-and">&amp;</span><br /><span class="name-line">சார்லஸ் சலமோன்</span></h1>
+            <p class="hero-announcement">எங்கள் திருமண நன்னாள்</p>
+            <div class="hero-rule"><span>♥</span></div>
+            <p class="hero-subtitle">
+              எங்களுடன் கொண்டாட உங்களை அன்புடன் அழைக்கிறோம்<br />என்றென்றும் தொடரும் வாழ்வின் இனிய தொடக்கத்தை
+            </p>
+            <div class="scratch-card" id="scratchCard" role="button" tabindex="0" aria-label="திருமணத் தேதியை அறியச் சுரண்டவும்">
+              <div class="scratch-reveal"><span>வெள்ளிக்கிழமை · 20 நவம்பர் 2026</span><small>பிற்பகல் 3:00 · சென்னை</small></div>
+              <canvas id="scratchCanvas" aria-hidden="true"></canvas>
+              <div class="scratch-prompt" aria-hidden="true"><span>✦ &nbsp; தேதியை அறியச் சுரண்டவும் &nbsp; ✦</span><small>எங்கள் சிறப்பான நாள்</small></div>
+              <div class="scratch-confetti" aria-hidden="true"></div>
+            </div>
+            <p class="hero-date">சென்னை <span>·</span> இந்தியா</p>
+            <a class="button button-gold" href="#details"
+              >எங்கள் மகிழ்வில் இணைந்திடுங்கள் <span>↓</span></a
+            >
+          </div>
+          <div
+            class="hero-photo"
+            role="img"
+            aria-label="வெள்ளை மலர்கள் நிறைந்த காதல் மிக்க தோட்டம்"
+          ></div>
+          <div class="hero-caption">
+            அன்பில் வேரூன்றி <span>✳</span> அருளில் வளர்கிறோம்
+          </div>
+        </section>
+
+        <section class="blessing section-pad" id="story">
+          <p class="eyebrow">எங்கள் புதிய தொடக்கத்திற்கான ஆசீர்வாதம்</p>
+          <div class="cross-mark" aria-hidden="true">✳</div>
+          <blockquote>
+            “இப்போது நிலைத்திருப்பவை இம்மூன்றே:<br />விசுவாசம், நம்பிக்கை, அன்பு.<br /><em
+              >இவற்றுள் அன்பே மிகச் சிறந்தது.</em
+            >”
+          </blockquote>
+          <p class="verse">1 கொரிந்தியர் 13:13</p>
+          <p class="blessing-copy">
+            நன்றியுள்ள இதயங்களுடனும் இறைவனின் ஆசீர்வாதத்துடனும், எங்கள் வாழ்நாள் முழுவதும்
+            நினைவில் போற்றும் இந்த இனிய நாளில் எங்களுடன் பங்கேற்க உங்களை அழைக்கிறோம்.
+          </p>
+        </section>
+
+        <!-- <section class="story-photo" aria-label="Our favourite kind of forever">
+          <div class="story-overlay">
+            <span>Our favourite kind of forever</span
+            ><span class="gold-line"></span
+            ><small>Kebisha Bright& Charles Salamon</small>
+          </div>
+        </section>
+
+        <section class="gallery section-pad" aria-labelledby="gallery-title">
+          <p class="eyebrow">Little moments, big love</p>
+          <h2 id="gallery-title">Our story in <em>frames</em></h2>
+          <div class="gallery-grid">
+            <figure class="gallery-item gallery-tall">
+              <img
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85"
+                alt="Bride and groom celebrating beneath a canopy"
+              />
+              <figcaption>the day we said yes</figcaption>
+            </figure>
+            <figure class="gallery-item gallery-small">
+              <img
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=800&q=85"
+                alt="A couple sharing a quiet moment together"
+              />
+              <figcaption>always finding our way</figcaption>
+            </figure>
+            <figure class="gallery-item gallery-small">
+              <img
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=85"
+                alt="A joyful wedding celebration with loved ones"
+              />
+              <figcaption>surrounded by our people</figcaption>
+            </figure>
+          </div>
+        </section> -->
+
+        <section class="countdown-section" id="countdown-section">
+          <div class="countdown-inner">
+            <div class="save-date-card"><span>தேதியைக் குறித்துக் கொள்ளுங்கள்</span><strong>20 நவம்பர் 2026</strong><small>சென்னை, இந்தியா</small></div>
+            <p class="eyebrow">திருமணத்திற்கான கவுண்ட்டவுன் தொடங்குகிறது</p>
+            <h2><em><span class="no-wrap">“சம்மதம்”</span></em> சொல்லும் நாளை நோக்கி</h2>
+            <div class="countdown" id="countdown" aria-live="polite"></div>
+            <p class="countdown-note">உங்களுடன் கொண்டாட ஆவலுடன் காத்திருக்கிறோம்</p>
+          </div>
+        </section>
+
+        <section class="details section-pad" id="details">
+          <p class="eyebrow">தேதியைக் குறித்துக் கொள்ளுங்கள்</p>
+          <h2><em>மகிழ்ச்சி</em> நிறைந்த நாள்</h2>
+          <div class="details-card venue-schedule">
+            <div class="detail-block">
+              <span class="detail-icon">✧</span>
+              <h3>திருமண நிகழ்வு நடைபெறும் இடம்</h3>
+              <p>வெள்ளிக்கிழமை, 20 நவம்பர் 2026</p>
+              <div class="schedule-times">
+                <p><span>திருமணச் சடங்கு</span><strong>பிற்பகல் 3:00</strong></p>
+                <p><span>வரவேற்பு</span><strong>மாலை 6:30</strong></p>
+              </div>
+              <p class="venue">செயின்ட் மேத்யூ தேவாலயம்</p>
+              <p>IAF சாலை, கிழக்கு தாம்பரம், சென்னை</p>
+            </div>
+          </div>
+          <div class="map-card">
+            <iframe title="கிழக்கு தாம்பரத்தில் உள்ள செயின்ட் மேத்யூ தேவாலயத்திற்கான வரைபடம்" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=St.%20Matthew%27s%20Church%2C%20IAF%20Road%2C%20East%20Tambaram%2C%20Chennai&output=embed"></iframe>
+            <a class="map-directions" target="_blank" rel="noopener" href="https://maps.app.goo.gl/BdqqTeaTopgXuTN87">⌖ &nbsp; வழிகாட்டுதலைப் பெறுங்கள்</a>
+          </div>
+          <p class="dress-note">
+            <span>உடை</span> விழாக்கால முறையான உடை · கொண்டாட்டத்திற்குத் தயாராக வாருங்கள்
+          </p>
+        </section>
+
+        <!-- <section class="rsvp-section" id="rsvp">
+        <div class="rsvp-card">
+          <p class="eyebrow">Your presence is our present</p>
+          <h2>Will you <em>join us?</em></h2>
+          <p class="rsvp-copy">Kindly reply by 20January 2026. We’d love to save you a seat.</p>
+          <form name="wedding-rsvp" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+            action="/success.html">
+            <input type="hidden" name="form-name" value="wedding-rsvp" />
+            <p class="honeypot"><label>Leave this empty: <input name="bot-field" /></label></p>
+            <label class="field-label" for="guestName">Your name</label><input id="guestName" name="name" type="text"
+              placeholder="First and last name" autocomplete="name" required />
+            <label class="field-label" for="guestEmail">Email address</label><input id="guestEmail" name="email"
+              type="email" placeholder="you@example.com" autocomplete="email" required />
+            <fieldset>
+              <legend>Will you be celebrating with us?</legend><label class="choice"><input type="radio"
+                  name="attendance" value="Joyfully accepts" required /><span>Joyfully accepts</span></label><label
+                class="choice"><input type="radio" name="attendance" value="Regretfully declines" /><span>Regretfully
+                  declines</span></label>
+            </fieldset>
+            <label class="field-label" for="guestCount">Number attending</label><select id="guestCount" name="guests">
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+            </select>
+            <label class="field-label" for="message">A note for the couple <span>(optional)</span></label><textarea
+              id="message" name="message" rows="3"
+              placeholder="Dietary needs, song requests, or just a little hello…"></textarea>
+            <button class="button button-gold submit-button" type="submit">Send our RSVP <span>→</span></button>
+          </form>
+        </div>
+      </section> -->
+
+        <section class="closing section-pad">
+          <div class="closing-flower">❀</div>
+          <p class="eyebrow">திருமண விருந்தில் நாம் கூடும் வரை...</p>
+          <h2>என்றும் <em>அன்புடன்</em></h2>
+          <p>கெபிஷா பிரைட் &amp; சார்லஸ் சலமோன்</p>
+        </section>
+      </main>
+      <!-- <nav class="mobile-dock" aria-label="Quick navigation">
+        <a href="#home" aria-label="Home"><span>⌂</span><small>Home</small></a>
+        <a href="#story" aria-label="Our story"><span>♡</span><small>Story</small></a>
+        <a href="#gallery-title" aria-label="Gallery"><span>▧</span><small>Photos</small></a>
+        <a href="#countdown-section" aria-label="Countdown"><span>✧</span><small>Countdown</small></a>
+      </nav> -->
+      <footer>
+        <span>அன்புடன் உருவாக்கப்பட்டது · 2026</span><a href="#home">மேலே செல்லுங்கள் ↑</a
+        ><span>C <i>&</i> K</span>
+      </footer>
+    </div>
+    <div class="petal-rain" id="petalRain" aria-hidden="true"></div>
+    <audio id="weddingMusic" loop preload="none"></audio>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
